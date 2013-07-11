@@ -29,5 +29,9 @@ $(call inherit-product-if-exists, vendor/asus/grouper/device-vendor.mk)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=wifi-only
 
+# for Gecko
+PRODUCT_PROPERTY_OVERRIDES += \
+  ro.moz.has_home_button=0
+
 DEVICE_PACKAGE_OVERLAYS := \
     device/asus/grouper/overlay
